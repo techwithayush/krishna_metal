@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import {RouterProvider, createHashRouter} from 'react-router-dom'
 import MainPage from './components/MainPage.jsx'
 import Application from './components/Application.jsx'
 import Contact from './components/Contact.jsx'
@@ -17,7 +17,7 @@ import DairyValves from './components/DairyValves.jsx'
 import AngleChannel from './components/AngleChannel.jsx'
 import BarsRods from './components/BarsRods.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path : '/',
     element : <App />,
